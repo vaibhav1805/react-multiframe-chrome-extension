@@ -2,6 +2,9 @@
 This codebase demonstrates how one can inject multiple frames like modals and panels in DOM using react js and a single redux-store.
 Using boilerplate from https://github.com/satendra02/react-chrome-extension
 
+![blog](https://user-images.githubusercontent.com/7772194/112615619-b1666780-8e48-11eb-96e9-12024c6b1531.gif)
+
+
 ## Installation
 >Make sure you have latest **NodeJs** version installed
 
