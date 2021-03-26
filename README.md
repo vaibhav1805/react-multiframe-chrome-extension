@@ -11,7 +11,7 @@ Using boilerplate from https://github.com/satendra02/react-chrome-extension
 Clone repo
 
 ```
-git clone
+git clone https://github.com/vaibhav1805/react-multiframe-chrome-extension
 ```
 Go to `react-chrome-extension` directory run
 
