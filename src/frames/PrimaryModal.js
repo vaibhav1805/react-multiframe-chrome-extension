@@ -1,6 +1,6 @@
 import React from 'react';
 import Frame, { FrameContextConsumer }from 'react-frame-component';
-import { useDispatch, connect } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 import {SWITCH_VIEW} from '../store/Actions';
 import {VIEW_SIDE_PANEL, VIEW_SECONDARY_MODAL} from '../codes';
@@ -39,8 +39,4 @@ const PrimaryModal = (props) => {
   );
 }
 
-const mapStateToProps = (state) => ({
-  primaryModal: state.sidePanel
-});
-
-export default connect(mapStateToProps, {})(PrimaryModal);
+export default PrimaryModal;

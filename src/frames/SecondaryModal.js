@@ -1,6 +1,6 @@
 import React from 'react';
 import Frame, { FrameContextConsumer }from 'react-frame-component';
-import { useDispatch, connect } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 import {SWITCH_VIEW} from '../store/Actions';
 import {VIEW_SIDE_PANEL, VIEW_PRIMARY_MODAL} from '../codes';
@@ -24,10 +24,10 @@ const SecondaryModal = (props) => {
                 <div>
                   This is Secondary Modal.
                 </div>
-                <div className="Link" onClick={() => dispatch({type: SWITCH_VIEW,viewId: VIEW_SIDE_PANEL})} style={linkStlye}>
+                <div onClick={() => dispatch({type: SWITCH_VIEW,viewId: VIEW_SIDE_PANEL})} style={linkStlye}>
                     Show Side Panel
                 </div>
-                <div className="Link" onClick={() => dispatch({type: SWITCH_VIEW, viewId: VIEW_PRIMARY_MODAL})} style={linkStlye}>
+                <div onClick={() => dispatch({type: SWITCH_VIEW, viewId: VIEW_PRIMARY_MODAL})} style={linkStlye}>
                     Show Primary Modal
                 </div>
               </div>
@@ -39,8 +39,4 @@ const SecondaryModal = (props) => {
   );
 }
 
-const mapStateToProps = (state) => ({
-  secondaryModal: state.secondaryModal
-});
-
-export default connect(mapStateToProps, {})(SecondaryModal);
+export default SecondaryModal;
